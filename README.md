@@ -1,6 +1,6 @@
 # spiced-projects
-This is some of project I had been working on my bootcamp.
-All the project are availabe on the projects folder. Fell free to use my codes!!!
+This are some of project I had been working on my bootcamp.
+All the projects code are availabe on the projects folder. Fell free to use my codes!!!
 
 ##hangman
 * Have fun playing my Hangman game. Using Javascript and practing DOM manipulation I built this spiced game!
