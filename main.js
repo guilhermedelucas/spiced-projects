@@ -53,6 +53,6 @@ app.get('/projects/:name/description', function (req, res){
 
 app.use(express.static(__dirname + '/projects'));
 
-app.listen(8080,function (){
+app.listen(process.env.PORT || 8080, function (){
     console.log("Listening!");
 });
