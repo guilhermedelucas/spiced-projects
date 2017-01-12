@@ -1,0 +1,55 @@
+* {
+margin:0;
+padding:0;
+list-style:none;
+vertical-align:top;
+left:0;
+top:0;
+}
+
+body {
+}
+
+#container {
+    position: relative;
+}
+
+#the_ticker {
+    position: absolute;
+    top:0px;
+    padding: 15px 0 15px 0;
+    left: 0;
+    display: block;
+    overflow : hidden;
+    white-space: nowrap;
+}
+
+.anim_info {
+    position: relative;
+    top:0px;
+    left:10px;
+    padding: 10px 50px 10px 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 0px;
+    display: inline;
+}
+
+.anim_info:hover {
+    color: blue;
+    text-decoration: underline;
+
+
+
+}
+
+
+#divide_line{
+    margin-top: 0px;
+    position: absolute;
+    border-bottom: 1px solid;
+    width: 100%;
+    top: 60px;
+}

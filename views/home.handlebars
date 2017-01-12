@@ -1,0 +1,19 @@
+<div id="background_image">
+
+{{>header}}
+
+<div id="body_container">
+
+{{#each projectsTemplate}}
+<div id="project_container">
+<a href="{{link}}"><h1 class= "project_header">{{title}}</h1></a>
+<a href="{{link}}"><img src="{{photo}}" width="480px"></a>
+<p class="project_description">{{description}}</p>
+</div>
+{{/each}}
+
+</div>
+
+{{>footer}}
+
+</div>

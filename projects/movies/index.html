@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>IMDB API</title>
+</head>
+<body>
+    <div id="container">
+        <div id="search_field">
+            <div id="header">Search for your movies!</div>
+              <input type="text" name="search" id="search_input" value="Select a movie title">
+              <button id="send_button">Search</button>
+        </div>
+    <div id="search_word"></div>
+    <div id="display_results">
+
+    <script id="movies" type="text/handlebars">
+        <div id="show_poster">
+            <img src="{{moviePoster}}">
+        </div>
+        <div id="text_render">
+            <h1>{{Title}}</h1>
+            <p>{{movieActor}}</p>
+            <p>{{movieRelDate}}</p>
+            <p>{{movieDirector}}</p>
+            <p>{{movieAwards}}</p>
+        </div>
+        </div>
+
+    </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

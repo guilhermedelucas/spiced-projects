@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Spotify Search API</title>
+</head>
+<body>
+    <div id="container">
+        <div id="search_field">
+            <div id="header">Spotify Search API </div>
+              <input type="text" name="search" id="search_input" value="I'm searching for">
+              <select name="artistioralbum" id="select_button">
+                <option value="artist">Artist</option>
+                <option value="album">Albums</option>
+              </select>
+              <button id="send_button">Go!</button>
+        </div>
+    <div id="search_word"></div>
+    <div id="display_results">
+
+
+        <script id="results" type="text/handlebars">
+        {{#each resultsToDisplay}}
+            <div id='result_box'>
+                <div class='img_result'>
+                    <a href="{{link}}">
+                    <img src="{{photo}}" height='200' width='200'></a>
+                </div>
+                <div class='text_result'>
+                    <a href='{{link}}'>{{name}}</a>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+</div>
+
+    <div id="more_results">More result click here, or scroll down to the bottom of page!</div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- <img src='images/nocontent.jpg' height='200' width='200'></a> -->

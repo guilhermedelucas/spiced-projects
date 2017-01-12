@@ -1,0 +1,29 @@
+<div id="background_image">
+
+{{>header}}
+
+<div id="singleproject_container">
+
+<!-- Menu -->
+<div id="left_menu">
+    <ul>
+        <li><a href="/">Home</a>
+    {{#each projectsTemplate}}
+        <li><a href="{{link}}">{{title}}</a></li>
+    {{/each}}
+    </ul>
+</div>
+
+{{#project}}
+<div id="singleproject_box">
+<a href="{{link}}"><h1 class="project_header">{{title}}</h1></a>
+<img src="{{photo}}" width="800px">
+<p class="project_description">{{description}}</p>
+<a href="{{link_full}}" target="_blank"><button id="launch">Launch this project</button></a>
+</div>
+{{/project}}
+</div>
+
+{{>footer}}
+
+</div>
